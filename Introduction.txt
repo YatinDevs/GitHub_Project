@@ -1,0 +1,22 @@
+Introduction:
+
+Good Afternoon/Morning Sir and Maam
+
+Myself Yatin Eknath Chaudhari
+Here
+We Are Presenting Our Project On Plastic and E-Waste Management System
+Website is Named as ZeroWaste
+
+This Web- Based Application is Bascially to Manage Ewaste and Gather it From Donors .
+And to Create Interactive and Engaging Enviornment.We have Kept it User Friendly To Make Ease In managing 
+Electronic And Plastic Waste .
+
+What Made Us Go For Idea
+
+During Pandemic Situtation We were unable to Manage  And To Carry Forward EWaste.
+SO we thought of Collecting Waste From Doorstep And Make it Easy for Dissolving it or Further Recycling 
+We Aim For Door-to Door Collection And Keep Healthy Enviornment around
+
+Scope
+As Companies,Industries Keep Eye on there Scrap Rate and its Affects to Make Profits We can Help them Out with our 
+Application
