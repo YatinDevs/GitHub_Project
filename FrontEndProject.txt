@@ -1,0 +1,404 @@
+-------------------------------------------------------------------------
+Front End :
+ Axios  Axios  Http Client Library is used to make requests to Send data to backend
+  .get Method
+  Get Data from User
+
+  .then Method to Post Swal Alerts
+ call back to access 
+  Data in Form of JSON 
+
+ Bootstrap "^5.1.0", CSS FrameWork
+
+ React Version "react": "^17.0.2"
+ 
+ ReactJSX
+ So Why ReactJSX
+ Here For Front End Directory and to Design UI Components
+ We Used React JavaScript library with XML(eXtensible Markup Language), 
+ Which helped us easier to write and add HTML in React.
+ We Used Virtual DOM(Document Object Model) Model here
+--------------------------------------------------------------------------
+ We create Project using Commands :
+
+step 1
+npx create-react-app reactproject1
+
+step 2
+cd reactproject1
+npm start
+
+npm run build
+npm install -g serve
+serve -s build
+
+
+Plastic_Ewaste_System
+
+Website Named -ZeroWaste
+
+Axios is an HTTP client library based on promises.
+
+    usestate useeffect
+    React hooks
+    only in functional components
+    Here, we describe the APIs for the built-in Hooks in React. 
+     The built-in Hooks can be divided into two parts, which are given below.
+
+Basic Hooks
+
+useState
+useEffect
+useContext
+
+Additional Hooks
+
+useReducer
+useCallback
+useMemo
+useRef
+useImperativeHandle
+useLayoutEffect
+
+WorkFlow of file and codes
+=============SRC Folder==========
+
+  Bootstrap iS Used For Basic -----> design portion
+ Basic Css
+
+---API folder------------
+A . Creating API(Application programming interface) Folder
+
+-- includes details of base url--http://localhost:8062" Where our data from Front End Goes to BackEnd --
+                          
+----------Components ----------------
+
+
+
+---------App.js  and Index.js File ---------
+1. Index.js     ----------a)We gave Route of App.js File on Index-->App.js
+                          b)Contains Bootstrap Import
+                          c)ReactDOM import
+                          d)React Imports
+
+2 .So on App.js Page  -- Router Pages
+  a)  We have imports of  User Pages as well as Admin Pages here
+  b) We Get to <Login Component> on Port --> localhost:3000/ 
+  c) ReactDOM import
+  d) We used Stateless Functional Component here
+  e) This is Router page - Mentioned all the User Routes And Admin Routes
+  f) Mainly here Login Page is Shown With 
+     <Login Component>
+         Login Page :
+         Register Page Route included
+         Forgot Password Route Page included
+         
+         Login Page Takes To :
+         Admin Login Pages
+         User Login Pages
+     </Login Component>
+
+3. We Have Four Scenarios Here For Login Component
+    A.User Login Pages
+    B.Admin Login Pages
+    C.Register Page 
+    D.Forgot Password
+
+A. After User Login it Routes Us  to
+
+User Home Page Which includes
+<Nav Bar Component>
+<Home Page Component>
+<Footer Component>
+----------------------------------------------------------------
+Nav Bar Component
+ Here Bootstrap used for design portion and basic css
+ Stateless Functional Component JSX Element used
+{ 
+
+In this Function of NavBar
+ 
+We Store (userData in SessionStorage)
+We created Logout Action (which Removes user Data and End Session)
+
+}
+ 
+DashBoard Includes Routes to :
+
+a HomePage
+b Donate Products Page
+  <Insert Component> 
+  Use Effect Hook 
+  Use State Hook
+  Axios  Http Client Library is used to make requests to Send data to backend
+  .get Method
+  Get Data from User
+
+  .then Method to Post Swal Alerts
+ call back to access 
+  Data in Form of JSON 
+
+  For alert after validation Swal is used
+  
+  validations
+  1.All Fields are Required
+  2.Enter a valid address
+  3. Enter description For Ewaste as well as Plastic
+Events used 
+ OnChange  
+ OnFocus
+
+c Pending Donation Page 
+d View Donation Page
+e Profile Page
+f Logout Page
+
+----------------------------------------------------------------
+---------------------------------------------------------------
+Home Component
+
+In Home Page Other Virtual DOM 
+Use Have Created Home Functional Component
+Which Include Use Effect Hook
+
+
+
+
+
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+
+Footer Component
+
+Functional Component used
+
+Contains Links to Required Pages For Fast Access 
+
+Contact InFo 
+like email Phone no and address and brief info
+
+----------------------------------------------------------------
+C.Register Page Scenario
+
+<Terms and Condition Page Component >
+< Back To Login page Component>
+
+ Use Effect Hook 
+  Use State Hook
+  Axios  Http Client Library is used to make requests to Send data to backend
+  .get Method
+  Get Data from User
+
+  .then Method to Post Swal Alerts
+ call back to access 
+  Data in Form of JSON 
+
+  For alert after validation Swal is used
+  
+  validations
+  1.All Fields are Required
+  2.Enter a valid address
+  3. Enter description For Ewaste as well as Plastic
+Events used 
+ OnChange  
+ OnFocus
+
+After Clicking on Register It Validates
+Its Validation Includes 
+1.  All Fields are Required
+2.  Please enter characters only and must have length of minimum 3 and maximum 30
+3. Enter City
+
+  let validate = () => {
+    if (
+      uname.trim() === "" ||
+      ucity === "" ||
+      uphone.trim() === "" ||
+      uemail.trim() === "" ||
+      upassword.trim() === "" ||
+      uconpassword.trim === "" ||
+      usecurityQues.trim() === "" ||
+      usecurityAns.trim() === ""
+    ) {
+      swal.fire("All fields are  required");
+    } else if (
+      uname.search(/^[a-zA-Z ]*$/) < 0 ||
+      uname.length < 3 ||
+      uname.length > 40
+    ) {
+      document.getElementById("name").classList.add("is-invalid");
+      setEname(
+        "Please enter characters only and must have length of minimum 3 and maximum 30"
+      );
+    } else if (ucity === "") {
+      document.getElementById("city").classList.add("is-invalid");
+      setEcity("Enter City");
+    } else if (uphone === "" || uphone.search(/^[789][0-9]{9}$/) < 0) {
+      document.getElementById("phone").classList.add("is-invalid");
+      setEphone("Enter valid Mobile Number");
+    } else if (
+      uemail === "" ||
+      uemail.search(/^[a-zA-Z0-9._]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) < 0
+    ) {
+      document.getElementById("email").classList.add("is-invalid");
+      setEemail("Enter valid Email ID");
+    } else if (
+      upassword === "" ||
+      upassword.search(
+        /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$/
+      ) < 0 ||
+      upassword.length < 6
+    ) {
+      document.getElementById("password").classList.add("is-invalid");
+      setEpassword(
+        "Enter a password with atleast 8 characters and must include 1 capital, 1 number and 1 special character"
+      );
+    } else if (upassword !== uconpassword) {
+      document.getElementById("conpassword").classList.add("is-invalid");
+      setEconpassword("Password mismatch.");
+    } else if (usecurityAns.length <= 3 || usecurityAns.length > 40) {
+      document.getElementById("securityAns").classList.add("is-invalid");
+      setEsecurityAns("Enter Answer lenght above 2 or less than 40");
+    } else if (document.getElementById("tnc").checked == false) {
+      document.getElementById("tnc").classList.add("is-invalid");
+      setEtnc("Please accept terms and conditions");
+    } else {
+      checkEmail(user);
+    }
+  };
+
+
+FOrgot Password Validations
+
+const validate = (e) => {
+    if (usera === "" || userpwd === "" || userconpwd === "") {
+      swal.fire("All fields are required");
+    } else if (usera.length <= 3 || usera.length > 40) {
+      document.getElementById("securityAns").classList.add("is-invalid");
+      setEans("Enter Answer length above 2 or less than 40");
+    } else if (
+      userpwd == "" ||
+      userpwd.search(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$/) <
+        0 ||
+      userpwd.length < 6
+    ) {
+      document.getElementById("password").classList.add("is-invalid");
+      setEpassword(
+        "Enter a password with atleast 8 characters and must include 1 capital, 1 number and 1 special character"
+      );
+    } else if (userpwd != userconpwd) {
+      document.getElementById("conpassword").classList.add("is-invalid");
+      setEconpassword("Password mismatch.");
+    } else {
+      getAnswer(ans);
+      e.preventDefault();
+    }
+
+Here We Used The useState hook is used for storing variables that are part of your application's state 
+and will change as the user interacts with your website. The useEffect hook allows components to 
+react to lifecycle events such as mounting to the DOM, re-rendering, and unmounting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3) react hook ---> create form --> store  (works on functional components)
+-------------------------------------------
+4) redux ----> structure
+5) bootstrap -----> design portion
+
+------------------------------------------------------------------------------
+node_modules folders -- This Contains Packages of Projects
+
+Public folder  -- Contains static content - html + css + js .
+src folder    -- Contains Logic and Code - Routes and linking codes is Done here .
+
+---------------------------------------------------------------------------------
+ Basic
+ web browser DOM(Document Object Model) is like this:
+
+  <html>
+  <head>
+  <title> </title>
+  </head>
+  <body>
+  <p></p>
+  </body>
+  </html>
+---------------------------------------------------------------------------------
+React We Using Virtual DOM(Document Object Model)
+
+eg .
+
+  Insta package
+  Combining all components in DOM we make Main frame
+  Img 
+  Navbar
+  Header 
+  Login 
+  Footer
+
+---------------------------------------------------------------------------------
+ Building Blocks of React are :
+
+  1 Components
+  2 State
+  3 Props
+---------------------------------------------------------------------------------
+A. Components are two types :
+  1 Stateless Functional 
+  2 stateful class
+---------------------------------------------------------------------------------
+
+Flow
+  index.html
+  <div id="root">
+
+  index.js
+  root.render(<App>)
+
+  App.js
+============================================
+  to create functional component
+  1) create folder in src --> components
+  2) create a file LoginComponents.jsx
+  3) type rfc ---> enter
+  4) write html inside div
+  5) inside App.js
+  <LoginComponents><LoginComponents/>
+
+  ============================================
+ to create class component
+ 1) rcc ---> shortcut
+ 
+ export default class Registeration extends Component{
+
+  }
+  1  class component in captial letter first word
+  2  export class component
+  3  we will inherit component in Class
+  4  in class render method is mandatory
+
+  npm i react-bootstrap
+  cdn(content delivery network)  file --> index.html we refer here
+-->contains cache content like web pages, images, and video in proxy servers near to your physical location
+ 
