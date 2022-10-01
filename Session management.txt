@@ -1,0 +1,30 @@
+Session is maintained Using UseEffect and UseState Hooks
+UseState Stores User session data
+Use Effect Gets and carry forward Sessiondata
+
+Session management is Done to carry foward User Session and Admin Session Throughout
+
+Use Have blogs Updation
+
+References
+[1] https://spring.io/
+[2] https://www.postgresql.org/
+[3] https://www.javascript.com/
+[4] https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[5] https://jquery.com/
+[6] https://www.ieee-security.org/TC/SP2017/papers/226.pd
+
+7.2 Types of Testing Used
+1) Manual Testing: In the manual test, we used the machine coding tool to write all the
+codes. After writing each code, we have run the code in the local server of the
+machine, and then check whether it runs. We have made the API and manually tested it
+in the postman tool and checked whether all the APIs are working well. It works well,
+so we add this code to your project file and connect to the front-end code.
+2) Unit Testing: In the unit test, we have tested the back-end code on the local server of
+the computer, and the code can run, and then we checked whether all APIs are working
+properly. Here, we connect all the backend code to the front-end code, and checked
+whether the login, registration, add/delete, and update functions are operating normally
+after clicking the button.
+3) API Testing: In this test, we checked whether all APIS of voters, candidates, and
+administrators are running well, or what type of exception is given, and we have
+resolved all exceptions
