@@ -1,0 +1,421 @@
+js library
+for front end directory
+
+design ui component
+easy to create and maintain
+project
+   (hitsendpoints)         (endpoint)
+1) react           +   node + express + mongo/mysql.(MERN)
+2) html +css +js javaspring + mysql
+3) react + spring boot + mysql
+
+step 1
+
+npx create-react-app reactproject1
+
+step 2
+cd reactproject1
+npm start
+
+npm run build
+npm install -g serve
+serve -s build
+
+node_moudles-- package
+  public    -- static content - html + css + js
+  src       -- logic and code - routes and stuff linking codes
+
+
+  web browser DOM
+
+  <html>
+  <head>
+  <title>
+  <body>
+
+  1) virtual DOM
+  eg insta package
+  combining all components in DOM we make Main frame
+  img 
+  header 
+  login
+
+  building blocks of react
+
+  1 components
+  2 State
+  3 Props
+
+  Compnents
+  1 stateless Functional 
+  2 stateful class 
+
+Flow
+  index.html
+  <div id="root">
+
+  index.js
+  root.render(<App>)
+
+  App.js
+============================================
+  to create functional component
+  1) create folder in src --> components
+  2) create a file LoginComponents.jsx
+  3) type rfc ---> enter
+  4) write html inside div
+  5) inside App.js
+  <LoginComponents><LoginComponents/>
+
+  ============================================
+ to create class component
+ 1) rcc ---> shortcut
+ 
+ export default class Registeration extends Component{
+
+  }
+  1  class component in captial letter first word
+  2  export class component
+  3  we will inherit component in Class
+  4  in class render method is mandatory
+
+  npm i react-bootstrap
+  cdn(content delivery network)  file --> index.html we refer here
+-->contains cache content like web pages, images, and video in proxy servers near to your physical location
+
+
+-------------------------------Expresss Node==========================================
+  web application [http protocol] - stateless protocol
+
+  webpages --- > webpage 2 ---> webpage 3-----> webpage 4 ---> webpage 5 
+
+  1) request
+  2) session
+
+  --- amazon
+  user ----
+  pass ----
+
+ // session create -- credientials saved in sessions
+ // keeps track of who is open with webpage and keeps log
+
+  shoes page
+  book page
+  mouse page
+>npm i express-session
+-----app.js---------------------
+  in admin.js
+  var session = require('express-session')
+  if(result)
+  {
+    req.session.username=req.body.username
+    }
+-------------------------------------------------
+   
+   
+    state management
+    1- session
+    2- cookies
+    3- url rewriting
+    4- hidden form field
+------------------------------React JS-------------------------------
+------------------------------React JS-------------------------------
+1` stateless
+function show()
+{
+
+
+  return(
+    <html>
+  )
+}
+
+ 2` stateful
+
+class test extends Component
+
+import React from 'react'
+
+export default function FunctionProps() {
+  return (
+    <div>FunctionProps</div>
+  )
+}
+============
+dynamically render value in {}
+============
+------------------------------React JS-------------------------------
+stateful tool
+Class Compnents
+
+------------------------------React JS-------------------------------
+React Nesting Compnents 
+------------------------------React JS-------------------------------
+React State --> used in class component
+Props ----  props is properties use to pass arg data
+
+file handling mainly used
+onclick
+onchnage 
+onselect
+onsubmit
+
+node+mongo +react
+
+project --react
+css
+bootstrap
+cdn
+
+------------------------------React JS-------------------------------
+1) router pages
+2) node mongo
+3) react hook ---> create form --> store  (works on functional components)
+-------------------------------------------
+4) redux ----> structure
+5) bootstrap -----> design portion
+
+-----------------------------------------------------------------------
+app.js
+import './App.css';
+import AddPerson from './components/AddPerson';
+import DeletePerson from './components/DeletePerson';
+import DisplayPerson from './components/DisplayPerson';
+import{BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
+
+function App() {
+  return (
+    <div className="App">
+       <AddPerson></AddPerson>
+       <DeletePerson></DeletePerson>
+       <DisplayPerson></DisplayPerson>
+    </div>
+  );
+}
+
+export default App;
+-----------------------------------------------------------------------
+
+1) router pages
+localhost:3000/add
+localhost:3000/delete
+
+
+npm i react-router-dom
+
+import{BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
+-----------------------------------------------------------------------
+1 npx create-react-app reactproject1
+2 npm i react-router-dom
+
+import{BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
+
+3 npm i axios
+4 3 components created 
+add delete DisplayPerson
+5  app.js
+routes 
+and 
+link
+   
+    <Router>
+      <div>
+      <ul>
+        <li><Link to='/'>Homepage</Link></li>
+        <li><Link to='/add'>Add Person</Link></li>
+        <li><Link to='/delete'>Delete Person</Link></li>
+        <li><Link to='/display'>Display Person</Link></li>
+      </ul>
+      </div>
+
+      <div>
+      <Routes>
+        <Route path='/'  element={<Homepage/>}></Route>
+        <Route path='/add'   element={<AddPerson/>}></Route>
+        <Route path='/delete'   element={<DeletePerson/>}></Route>
+        <Route path='/display'   element={<DisplayPerson/>}></Route>
+      </Routes>
+      </div>
+    </Router>
+
+    usestate useeffect
+    React hooks
+    only in functional components
+    Here, we describe the APIs for the built-in Hooks in React. The built-in Hooks can be divided into two parts, which are given below.
+
+Basic Hooks
+
+useState
+useEffect
+useContext
+Additional Hooks
+
+useReducer
+useCallback
+useMemo
+useRef
+useImperativeHandle
+useLayoutEffect
+
+
+
+    function getName(){ setName({name: "ranjan"})}
+    
+    function getAge(){setAge({ age : "21"})}
+    
+    function getAddress(){ setAddress({address : "Pune"})}
+
+--------------------------------------------------------------------------
+    const [name,setName] = useState("");
+    const [age,setAge] = useState("");
+    const [address,setAddress] = useState("");
+
+    function getName(){ setName({name: "ranjan"})}
+    
+    function getAge(){setAge({ age : "21"})}
+    
+    function getAddress(){ setAddress({address : "Pune"})}
+
+    function getName(){ setName({e.target.value})}
+    
+
+    ----------------------------------------------------------------------
+    const [name,setName] = useState();
+    const [age,setAge] = useState();
+    const [address,setAddress] = useState();
+
+    
+    
+    
+
+    function getName(e){ setName(e.target.value)}
+    
+    function getAge(e){setAge( e.target.value)}
+
+    function getAddress(e){ setAddress(e.target.value)}
+
+--------------------------------------------------------------------------------------
+----------------------------AddPerson-----------------------------------------------
+
+import React from 'react'
+import { useState } from 'react'
+// react hooks react v16
+// to store functional data
+// functional components not in class components
+export default function AddPerson() {
+
+  // mentioning variable and setting using State
+    const [name,setName] = useState("Test")// Test is default value of name variable
+    const [age,setAge] = useState(0);
+    const [address,setAddress] = useState("abcd");
+
+    
+    
+    // getting info from html into e
+
+    //function getName(e){ setName(e.target.value)}
+    
+    function getAge(e){setAge( e.target.value)}
+
+    function getAddress(e){ setAddress(e.target.value)}
+
+  return (
+    
+       
+<html lang="en">
+
+<head>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Add Person</h1>
+    <div id="r">
+      
+      <form >
+      // arrow function way of input
+      <label for="Name">  Name : </label>  <input placeholder="NAME" type="text"  onChange={ (e)=> setName(e.target.value)}/> 
+     <br /> <br />       
+     <label for="Age"> Age : </label>  <input placeholder="AGE" type="text"  onChange={getAge}/> 
+     <br /> <br />  
+     <label for="Address"> Address : </label>  <input placeholder=" ADDRESS" type="text"  onChange={getAddress}/>
+     <br /> <br />  
+   
+     <input type="submit" value="Submit" />
+         
+       </form>
+     
+    </div>
+   
+    <div>
+
+           { name} <br /> <br />  {age} <br /> <br /> {address}
+
+    </div>
+</body>
+
+</html>
+
+  )
+}
+
+--------------------------------------------------------------------------------------
+----------------------------AddPerson-----------------------------------------------
+
+import React ,{useState} from 'react'
+//npm i react-hook-form
+import {useForm} from 'react-hook-form'
+import axios from 'axios'
+export default function AddPersonDetails() {
+    
+    const {register,handleSubmit,}=useForm()
+    const [data,setData]=useState("")
+    const onSubmit=(d)=>
+    {
+        setData(JSON.stringify(d))
+        axios.post("http://localhost:8080/Add1",{d});
+  
+    }
+  return (
+    <div>
+
+      <form onSubmit={handleSubmit(onSubmit)}>
+         Name<input type="text"  {...register('name')} /><br></br>
+         Age<input type="text"   {...register('age')} /><br></br>
+         Address<input type="text" {...register('address')}/><br></br>
+
+         <input type="submit"/><br></br>
+      </form>
+
+       <div>
+          {data}
+       </div>
+
+    </div>
+  )
+}
+
+
+--------------------------------------------------
+REACT ui
+
+class component
+function component
+
+--------------------------------------------------
+1) npm i axios cors body-parser express
+2) create folder -->server.js
+3) open two terminal 
+
+> npm start 
+
+> npx nodemon .\server.js
+
+--------------------------------------------------
+---------------REDUX-----------------------------------
+-------------------------------------------------
+
+application
+
+parent component --variable --value
